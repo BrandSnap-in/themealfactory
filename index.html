@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>The Meal Factory | Best North Indian & Chinese Delivery in Ghaziabad</title>
+  <meta name="description" content="Craving delicious, hygienic, and fresh meals? The Meal Factory is Ghaziabad's ultra-premium cloud kitchen serving authentic North Indian Paneer Curries, Breakfast Parathas, and Chinese Noodles. Delivered fast with extreme care.">
+  <meta name="keywords" content="Food Delivery in Ghaziabad, North Indian Food Ghaziabad, Chinese Food Ghaziabad, Best Cloud Kitchen Ghaziabad, Veg Food Delivery Ghaziabad, Online Food Delivery Ghaziabad, Dal Makhani delivery Ghaziabad, Chole Bhature Ghaziabad">
+  <meta name="author" content="The Meal Factory">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Media Webpack -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="The Meal Factory | Freshly Prepared Comfort Food in Ghaziabad">
+  <meta property="og:description" content="Gourmet North Indian & Chinese comfort food prepared in highly hygienic kitchens and delivered piping hot to your doorstep. Order directly or on Swiggy & Zomato!">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:url" content="https://themealfactory.in">
+  <meta property=" og:site_name" content="The Meal Factory">
+
+  <!-- Favicon / Brand Styling Link -->
+  <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/000000/chef-hat.png">
+  
+  <!-- Custom CSS Sheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org Restaurant JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "The Meal Factory",
+      "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+      "@id": "https://themealfactory.in/#restaurant",
+      "url": "https://themealfactory.in",
+      "telephone": "+919000000000",
+      "priceRange": "$$",
+      "menu": "https://themealfactory.in/#menu",
+      "servesCuisine": ["North Indian", "Chinese", "Fast Food"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Raj Nagar Extension, Cloud Kitchen Cluster",
+        "addressLocality": "Ghaziabad",
+        "addressRegion": "UP",
+        "postalCode": "201017",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "28.6913",
+        "longitude": "77.4478"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "11:00",
+        "closes": "23:30"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "1250"
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- STICKY HEADER -->
+  <header class="top-header" id="headerHome">
+    <div class="container header-inner">
+      <a href="#headerHome" class="logo-wrapper">
+        <div class="logo-icon" style="background: transparent; overflow: hidden; display: flex; align-items: center; justify-content: center; border-radius: 0;">
+          <img src="logo.png" alt="The Meal Factory Logo" style="width: 100%; height: 100%; object-fit: contain;" referrerpolicy="no-referrer">
+        </div>
+        <span class="logo-text">The Meal <span>Factory</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav">
+        <a href="#headerHome" class="active">Home</a>
+        <a href="#aboutSection">Our Story</a>
+        <a href="#menuSection">Menu</a>
+        <a href="#whyUsSection">Why Us</a>
+        <a href="#reviewsSection">Reviews</a>
+        <a href="#orderDirectSection">Order Direct</a>
+        <a href="#faqSection">FAQs</a>
+      </nav>
+
+      <!-- CTA Button Desktop -->
+      <a href="#orderDirectSection" class="cta-header-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        Order on WhatsApp
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav-panel" id="mobileNavPanel">
+    <a href="#headerHome">Home</a>
+    <a href="#aboutSection">Our Story</a>
+    <a href="#menuSection">Menu Hub</a>
+    <a href="#whyUsSection">Why Customers Love Us</a>
+    <a href="#reviewsSection">Customer Reviews</a>
+    <a href="#orderDirectSection">Direct Order Form</a>
+    <a href="#faqSection">FAQs</a>
+  </div>
+
+  <!-- SECTION 1: HERO CONTAINER -->
+  <section class="hero-sec">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge-tag">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Gourmet Cloud Kitchen Ghaziabad
+        </div>
+        <h1 class="hero-title">Delicious Meals <span>Delivered</span> To Your Doorstep</h1>
+        <p class="hero-sub">Freshly prepared North Indian and Chinese favorites made with high-quality ingredients, pure recipes, and delivered with ultimate care.</p>
+        
+        <div class="hero-buttons">
+          <a href="#menuSection" class="btn-primary">
+            <span>View Menu</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#orderDirectSection" class="btn-secondary">Order Custom Meals</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=80" alt="Delicious Indian Dal Makhani Meal representation" class="hero-main-img" id="heroMainImg">
+        
+        <!-- Floating Visual elements -->
+        <div class="hero-float f-1">
+          <span class="hero-float-icon">🍲</span>
+          <div class="hero-float-lbl">
+            Dal Makhani Special
+            <span>Our BestSeller</span>
+          </div>
+        </div>
+
+        <div class="hero-float f-2">
+          <span class="hero-float-icon">🌶️</span>
+          <div class="hero-float-lbl">
+            Pure & Fresh Veg
+            <span>Hygienic prep</span>
+          </div>
+        </div>
+
+        <div class="hero-float f-3">
+          <span class="hero-float-icon">⚡</span>
+          <div class="hero-float-lbl">
+            Under 35 Mins
+            <span>Superfast Delivery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: TRUST STATS BAR -->
+  <section class="trust-bar-sec">
+    <div class="container trust-grid">
+      <!-- Card 1 -->
+      <div class="trust-card" id="tcIngredients">
+        <div class="trust-icon-box">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="trust-number">
+          <span class="counter-number" data-target="100" data-suffix="%">0%</span>
+        </div>
+        <div class="trust-title">Fresh Ingredients</div>
+        <div class="trust-desc">Direct farm-sourced grains & authentic locally milled rich dairy.</div>
+      </div>
+      <!-- Card 2 -->
+      <div class="trust-card" id="tcDelivery">
+        <div class="trust-icon-box">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+        </div>
+        <div class="trust-number">
+          <span class="counter-number" data-target="30" data-suffix=" Min">0 Min</span>
+        </div>
+        <div class="trust-title">Fast Delivery</div>
+        <div class="trust-desc">Insulated heavy-duty hot bags ensure steaming, rich food.</div>
+      </div>
+      <!-- Card 3 -->
+      <div class="trust-card" id="tcHygiene">
+        <div class="trust-icon-box">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="trust-number">
+          <span class="counter-number" data-target="5" data-suffix=" Star">0 Star</span>
+        </div>
+        <div class="trust-title">Hygienic Kitchen</div>
+        <div class="trust-desc">Extreme cleaning schedules, daily sanitization, hairnets & gloves.</div>
+      </div>
+      <!-- Card 4 -->
+      <div class="trust-card" id="tcCustomers">
+        <div class="trust-icon-box">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+        </div>
+        <div class="trust-number">
+          <span class="counter-number" data-target="15000" data-suffix="+">0+</span>
+        </div>
+        <div class="trust-title">Customer Favorite</div>
+        <div class="trust-desc">Consistently rated as premium comfort food brand across Ghaziabad.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: ABOUT STORY -->
+  <section class="about-sec" id="aboutSection">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-bento">
+          <img src="https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=400&q=80" alt="Delicious North Indian spices & preparation" class="about-bento-img tall" id="aboutImg1">
+          <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=400&q=80" alt="Stirring freshly made premium Chinese noodles" class="about-bento-img" id="aboutImg2">
+          <img src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=400&q=80" alt="Authentic soft Chole Bhature serving state" class="about-bento-img" id="aboutImg3">
+          <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=400&q=80" alt="Chef preparing warm aloo stuffing Paratha" class="about-bento-img tall" id="aboutImg4">
+        </div>
+        <div class="about-experience-badge">
+          <h4>100%</h4>
+          <p>Fresh Food Consistently</p>
+        </div>
+      </div>
+
+      <div class="about-body">
+        <div class="badge-tag">Our Culinary Craft</div>
+        <h3>Comfort Food Made Better, Cooked With Cleanliness</h3>
+        <p>At <strong>The Meal Factory</strong>, we believe comforting, delicious food shouldn't be an occasional luxury—it should be a daily joy. Operating as one of Ghaziabad's premier state-of-the-art cloud kitchens, we craft authentic, slow-cooked North Indian and fiery Chinese curries with absolute hygiene variables.</p>
+        <p>Our skilled, health-screened master chefs standardize every recipe using premium ingredients—fresh block cottage paneer, whole wheat grains, and pure spices. No computational shortcuts, no raw food additives, and zero unhygienic shortcuts. We serve you meals we confidently feed our own families.</p>
+        
+        <div class="about-highlights">
+          <div class="about-highlight-item">
+            <div class="about-check-box">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="about-highlight-text">
+              <h5>Direct Cloud Transit</h5>
+              <p>Made instantly on order, zero pre-frozen holding.</p>
+            </div>
+          </div>
+
+          <div class="about-highlight-item">
+            <div class="about-check-box">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="about-highlight-text">
+              <h5>Hygienic Packaging</h5>
+              <p>Packed in food-grade, leak-proof airtight containers.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#menuSection" class="btn-primary">Explore Our Kitchen Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTIONS 4 & 5: DYNAMIC MENU HUB -->
+  <section class="menu-hub-sec" id="menuSection">
+    <div class="container" style="text-align: center; max-width: 800px; padding: 40px 24px;">
+      <div class="section-head" style="margin-bottom: 36px;">
+        <div class="badge-tag">Menu</div>
+        <h2>Our Curated Offerings</h2>
+        <p>Browse our curated offline menu of delicious North Indian curry bowls, buttered stuffed parathas, and wok-fired premium Chinese comfort foods, prepared to the highest hygiene standards.</p>
+      </div>
+
+      <!-- Menu Presentation Luxury Card -->
+      <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 48px 32px; box-shadow: var(--shadow-lg); border: 1px solid rgba(17, 17, 17, 0.05); margin: 0 auto; display: flex; flex-direction: column; align-items: center; position: relative; overflow: hidden; max-width: 600px;">
+        <!-- Glowing gradient backgrounds for premium styling -->
+        <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: radial-gradient(circle, rgba(255, 107, 0, 0.08) 0%, transparent 70%); pointer-events: none;"></div>
+        <div style="position: absolute; bottom: -50px; left: -50px; width: 150px; height: 150px; background: radial-gradient(circle, rgba(255, 107, 0, 0.05) 0%, transparent 70%); pointer-events: none;"></div>
+
+        <!-- Premium SVG Icon badge -->
+        <div style="width: 76px; height: 76px; background: rgba(255, 107, 0, 0.08); border-radius: 50%; color: var(--accent); display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+        </div>
+
+        <h3 style="font-family: var(--font-display); font-size: 1.6rem; margin-bottom: 12px; font-weight: 700;">Menu Catalogue</h3>
+        <p style="color: var(--text-muted); font-size: 0.98rem; max-width: 440px; margin-bottom: 32px; line-height: 1.6;">Click the button below to view or download our complete high-definition digital menu catalog. Order directly over WhatsApp or find us on Swiggy & Zomato.</p>
+
+        <!-- Elegant PDF Button -->
+        <a href="menu.pdf" target="_blank" class="btn-primary" style="display: inline-flex; width: 100%; max-width: 320px; text-decoration: none; align-items: center; justify-content: center; gap: 10px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          Open Menu (PDF)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: WHY CUSTOMERS LOVE US -->
+  <section class="features-sec" id="whyUsSection">
+    <div class="container">
+      <div class="section-head">
+        <div class="badge-tag">No Quality Compromises</div>
+        <h2>Why Customers Love The Meal Factory</h2>
+        <p>A promise of uncompromising consistency. We serve gourmet comfort meal portions optimized with the highest hygiene considerations.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <article class="feature-premium-card" id="featFresh">
+          <div class="feature-premium-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Freshly Prepared</h4>
+          <p>Every single portion is cooked individually from clean raw stocks immediately when your order confirmation rings on our consoles. No stale items.</p>
+        </article>
+
+        <!-- Feature 2 -->
+        <article class="feature-premium-card" id="featQuality">
+          <div class="feature-premium-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h4>Quality Ingredients</h4>
+          <p>We source ultra-premium unadulterated whole wheat grains, pure country ghee, cold-pressed oils, and premium quality cottage cheese brand blocks.</p>
+        </article>
+
+        <!-- Feature 3 -->
+        <article class="feature-premium-card" id="featDelivery">
+          <div class="feature-premium-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <h4>Fast Delivery</h4>
+          <p>Delivered by dedicated, clean-suited personnel utilizing heat-retentive insulated bags so your curries are steaming hot upon arrival.</p>
+        </article>
+
+        <!-- Feature 4 -->
+        <article class="feature-premium-card" id="featTaste">
+          <div class="feature-premium-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h4>Great Taste</h4>
+          <p>Authentic generation-old recipes crafted by skilled North Indian specialty chefs. Rich, beautifully spiced gravy flavors that feel authentic.</p>
+        </article>
+
+        <!-- Feature 5 -->
+        <article class="feature-premium-card" id="featAffordable">
+          <div class="feature-premium-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <h4>Affordable Pricing</h4>
+          <p>Gourmet restaurant-grade taste profiles scaled with standard pocket budgets. Double values for healthy comfort food meals.</p>
+        </article>
+
+        <!-- Feature 6 -->
+        <article class="feature-premium-card" id="featConsistent">
+          <div class="feature-premium-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+          </div>
+          <h4>Consistent Quality</h4>
+          <p>Standardized measurement protocols on spices, timing logs, and raw inputs ensure the paneer taste you love today stays exactly the same tomorrow.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: LUXURY REVIEWS CAROUSEL -->
+  <section class="reviews-sec" id="reviewsSection">
+    <div class="container">
+      <div class="section-head">
+        <div class="badge-tag">Verified Testimonials</div>
+        <h2>What Food Lovers Say</h2>
+        <p>Thousands of families across Ghaziabad trust The Meal Factory for safe, tasty and comforting lunches and dinners.</p>
+      </div>
+
+      <div class="reviews-carousel-outer">
+        <div class="reviews-track" id="slidesTrack">
+          <!-- Slide 1: Sharad Thakur -->
+          <div class="review-slide" id="revSlide1">
+            <article class="review-luxury-card">
+              <span class="review-quote-icon">“</span>
+              <p class="review-text">One of best possible places for ordering desi indian food with awesome taste.</p>
+              <div class="review-avatar-group">
+                <span class="review-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </span>
+              </div>
+              <h4 class="review-author">Sharad Thakur</h4>
+              <span class="review-author-meta">Verified Reviewer • 2 reviews • 5 years ago</span>
+            </article>
+          </div>
+
+          <!-- Slide 2: Divyanshu Dubey -->
+          <div class="review-slide" id="revSlide2">
+            <article class="review-luxury-card">
+              <span class="review-quote-icon">“</span>
+              <p class="review-text">Awesome meal provided by them..staff and service are very motivated with professionalism.</p>
+              <div class="review-avatar-group">
+                <span class="review-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </span>
+              </div>
+              <h4 class="review-author">Divyanshu Dubey</h4>
+              <span class="review-author-meta">Local Guide • 270 reviews • 1877 photos • 5 years ago</span>
+            </article>
+          </div>
+
+          <!-- Slide 3: Prashant Prasad -->
+          <div class="review-slide" id="revSlide3">
+            <article class="review-luxury-card">
+              <span class="review-quote-icon">“</span>
+              <p class="review-text">Best online delivery food 🍲 and affordable.<br><span style="font-size: 0.85em; opacity: 0.85; display: inline-block; margin-top: 4px;">Food: 5/5 | Service: 5/5</span></p>
+              <div class="review-avatar-group">
+                <span class="review-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </span>
+              </div>
+              <h4 class="review-author">Prashant Prasad</h4>
+              <span class="review-author-meta">Local Guide • 37 reviews • 3 years ago</span>
+            </article>
+          </div>
+
+          <!-- Slide 4: Mansimran Singh -->
+          <div class="review-slide" id="revSlide4">
+            <article class="review-luxury-card">
+              <span class="review-quote-icon">“</span>
+              <p class="review-text">Taste and portion was upto the mark.</p>
+              <div class="review-avatar-group">
+                <span class="review-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </span>
+              </div>
+              <h4 class="review-author">Mansimran Singh</h4>
+              <span class="review-author-meta">Local Guide • 292 reviews • 289 photos • 5 years ago</span>
+            </article>
+          </div>
+        </div>
+
+        <!-- Carousel navigation buttons -->
+        <div class="reviews-controls">
+          <button class="carousel-btn" id="slideLeftBtn" aria-label="Previous review">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div class="carousel-dots" id="carouselDots">
+            <span class="carousel-dot active"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+          </div>
+          <button class="carousel-btn" id="slideRightBtn" aria-label="Next review">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: ORDER ONLINE PORTALS (High conversion zone) -->
+  <section class="order-channels-sec" id="orderChannels">
+    <div class="container">
+      <div class="section-head">
+        <div class="badge-tag">Zero Hassle Ordering</div>
+        <h2>Smarter Ways to Order</h2>
+        <p>Order directly from our kitchen to secure maximum reward discounts, or find us on India's top trusted aggregators in Ghaziabad region.</p>
+      </div>
+
+      <div class="channels-grid">
+        <!-- Swiggy card -->
+        <article class="channel-card swiggy" id="chanSwiggy">
+          <div class="channel-logo-container" style="overflow: hidden; padding: 0;">
+            <img src="Swiggy-logo.png" alt="Swiggy" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;" referrerpolicy="no-referrer">
+          </div>
+          <h4>Swiggy</h4>
+          <p>Order on India’s top platform. Live dispatch tracking, simple payment interface, and instant delivery.</p>
+          <a href="https://swiggy.com" target="_blank" class="channel-btn">
+            Order on Swiggy
+          </a>
+        </article>
+
+        <!-- Zomato card -->
+        <article class="channel-card zomato" id="chanZomato">
+          <div class="channel-logo-container" style="overflow: hidden; padding: 0;">
+            <img src="Zomato-logo.png" alt="Zomato" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;" referrerpolicy="no-referrer">
+          </div>
+          <h4>Zomato</h4>
+          <p>Find us listed on Zomato. Enjoy active pro discounts, lightning delivery speeds, and verified user comments.</p>
+          <a href="https://zomato.com" target="_blank" class="channel-btn">
+            Order on Zomato
+          </a>
+        </article>
+
+        <!-- WhatsApp card -->
+        <article class="channel-card whatsapp-direct" id="chanWhatsapp">
+          <div class="channel-logo-container">
+            <span style="font-size: 2.2rem; color: #25D366;">💬</span>
+          </div>
+          <h4>Direct WhatsApp</h4>
+          <p>Order directly &amp; save up to 10% on direct billing. Zero platform fees, customized chef customizations.</p>
+          <a href="#orderDirectSection" class="channel-btn">
+            Order Directly
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: DIRECT ENQUIRY FORM PANEL AND CONTACT -->
+  <section class="contact-sec" id="orderDirectSection">
+    <div class="container contact-layout">
+      <div class="contact-details">
+        <div class="badge-tag">Direct From Kitchen Service</div>
+        <h3>Place a Direct Kitchen Order</h3>
+        <p class="contact-intro">Save aggregated platform margins! Fill out your contact details and desired signature dish, and click submit. We instantly design your customized WhatsApp text to initiate safe delivery.</p>
+        
+        <div class="contact-info-block">
+          <div class="info-row">
+            <div class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="info-val">
+              <h5>Kitchen Hub Location</h5>
+              <p>Raj Nagar Extension Cloud Cluster, Ghaziabad, Uttar Pradesh, 201017</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div class="info-val">
+              <h5>Service Timings</h5>
+              <p>Monday - Sunday (11:00 AM - 11:30 PM)</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="info-val">
+              <h5>Direct Hotline Call</h5>
+              <p>+91 90000 00000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Actionable Contact/WhatsApp Order Form (STRICT WHATSAPP INTEGRATION) -->
+      <div class="contact-form-box">
+        <h4>Order Builder Summary</h4>
+        <p class="form-sub-header">Compile details. Submitting loads WhatsApp directly.</p>
+        
+        <form id="contactEnquiryForm" novalidate>
+          <div class="form-group-grid">
+            <div class="form-group">
+              <label for="custName">Your Name *</label>
+              <input type="text" id="custName" class="form-input" placeholder="e.g. Yashas Chaudhry" required autocomplete="name">
+            </div>
+
+            <div class="form-group">
+              <label for="custPhone">Phone Number *</label>
+              <input type="tel" id="custPhone" class="form-input" placeholder="e.g. 9876543210" required autocomplete="tel">
+            </div>
+
+            <div class="form-group full-width">
+              <label for="orderInquiry">Choose Signature Dish / Menu Inquiry *</label>
+              <select id="orderInquiry" class="form-select" required>
+                <option value="General Menu Inquiry">General Inquiry / Dynamic Buffet Order</option>
+                <option value="Dal Makhani Special">Dal Makhani Special - ₹240</option>
+                <option value="Shahi Paneer Deluxe">Shahi Paneer Deluxe - ₹260</option>
+                <option value="Kadai Paneer Royal">Kadai Paneer Royal - ₹270</option>
+                <option value="Paneer Butter Masala">Paneer Butter Masala - ₹280</option>
+                <option value="Paneer Lababdar Special">Paneer Lababdar Special - ₹290</option>
+                <option value="Veg Noodles Wok Special">Veg Noodles Wok Special - ₹180</option>
+                <option value="Veg Fried Rice Basmati">Veg Fried Rice Basmati - ₹180</option>
+                <option value="Masala Maggi Spicy">Masala Maggi Double-Spice - ₹99</option>
+                <option value="Chole Bhature Traditional">Chole Bhature Traditional - ₹160</option>
+                <option value="Stuffed Aloo Paratha Butter">Stuffed Aloo Paratha Butter - ₹120</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="custMessage">Custom Instructions (e.g. "Less spicy", "No onion garlic")</label>
+              <textarea id="custMessage" class="form-textarea" placeholder="Add custom chef preferences here..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="whatsapp-submit-btn" aria-label="Compile Order and Send to WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            Send WhatsApp Order
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10: FAQ ACCORDIONS -->
+  <section class="faq-sec" id="faqSection">
+    <div class="container">
+      <div class="section-head">
+        <div class="badge-tag">Got Questions?</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Before placing your order, review standard details about our ingredients, preparation timings, hygiene standards, and prompt local services.</p>
+      </div>
+
+      <div class="faq-group">
+        <!-- FAQ 1 -->
+        <article class="faq-item" id="faq1">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans1">
+            <span>Do you offer delivery?</span>
+            <div class="faq-chevron">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </button>
+          <div class="faq-content" id="faq-ans1">
+            <div class="faq-content-inner">
+              Yes! We offer direct hot-food delivery all across Ghaziabad (including major sectors like Raj Nagar Extension, Indirapuram, Shastri Nagar, Vaishali, and nearby grids) within 35 minutes of cooking. You can also find us on Swiggy and Zomato.
+            </div>
+          </div>
+        </article>
+
+        <!-- FAQ 2 -->
+        <article class="faq-item" id="faq2">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans2">
+            <span>What cuisines do you serve?</span>
+            <div class="faq-chevron">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </button>
+          <div class="faq-content" id="faq-ans2">
+            <div class="faq-content-inner">
+              We specialize in authentic North Indian delicacies (buttery Dal Makhani, high-grade Paneer specialties, balloon Chole Bhature, tawa parathas) and wok-fried Chinese preparations (veg noodles, fried rice). Our menu is 100% vegetarian.
+            </div>
+          </div>
+        </article>
+
+        <!-- FAQ 3 -->
+        <article class="faq-item" id="faq3">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans3">
+            <span>Are your meals freshly prepared?</span>
+            <div class="faq-chevron">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </button>
+          <div class="faq-content" id="faq-ans3">
+            <div class="faq-content-inner">
+              Absolutely. We enforce a strict "cooked-on-order" workflow. No food bases are pre-frozen or microwaved. Spices are seasoned individually inside pristine utensils for every separate client ticket.
+            </div>
+          </div>
+        </article>
+
+        <!-- FAQ 4 -->
+        <article class="faq-item" id="faq4">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans4">
+            <span>Do you offer family meals?</span>
+            <div class="faq-chevron">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </button>
+          <div class="faq-content" id="faq-ans4">
+            <div class="faq-content-inner">
+              Yes, our larger portion capacities (like Dal Makhani and Curries) are optimized for direct family servicing. You can combine multiple items or contact us on WhatsApp directly for custom group catering orders.
+            </div>
+          </div>
+        </article>
+
+        <!-- FAQ 5 -->
+        <article class="faq-item" id="faq5">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans5">
+            <span>How can I place an order?</span>
+            <div class="faq-chevron">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </button>
+          <div class="faq-content" id="faq-ans5">
+            <div class="faq-content-inner">
+              You can click "Inquire / Order" on any dish inside our Signature Menu, which auto-fills the Whatsapp Inquiry builder below and scrolls you down. Submit the form to place direct kitchen tickets, or search "The Meal Factory" on Swiggy and Zomato.
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 11: FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-columns">
+      <div class="footer-brand">
+        <a href="#headerHome" class="logo-wrapper" style="margin-bottom: 16px;">
+          <div class="logo-icon" style="background: transparent; overflow: hidden; display: flex; align-items: center; justify-content: center; border-radius: 0;">
+            <img src="logo.png" alt="The Meal Factory Logo" style="width: 100%; height: 100%; object-fit: contain;" referrerpolicy="no-referrer">
+          </div>
+          <span class="logo-text" style="color:#FFFFFF">The Meal <span style="color:var(--accent)">Factory</span></span>
+        </a>
+        <p>Premium cloud kitchen and vegetarian comfort food brand serving Ghaziabad. High hygiene certifications, fresh ingredients, authentic spices, and safety guaranteed.</p>
+        
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Our Facebook link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Our Instagram link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </aside>
+          <a href="#" class="social-link" aria-label="Our Twitter link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Quick Navigation</h5>
+        <ul class="footer-links">
+          <li><a href="#headerHome">Home</a></li>
+          <li><a href="#aboutSection">Our Story</a></li>
+          <li><a href="#menuSection">Signature Offerings</a></li>
+          <li><a href="#whyUsSection">Why Customers Love Us</a></li>
+          <li><a href="#reviewsSection">Customer Reviews</a></li>
+          <li><a href="#orderDirectSection">Direct Order Form</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact &amp; Timings</h5>
+        <div class="footer-contact-row">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path></svg>
+          <p>Raj Nagar Extension cloud kitchen clusters, Ghaziabad, Uttar Pradesh, 201017</p>
+        </div>
+        <div class="footer-contact-row">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          <p>Hotline: +91 90000 00000</p>
+        </div>
+        <div class="footer-contact-row">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg>
+          <p>Mon - Sun: 11:00 AM - 11:30 PM</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 The Meal Factory. All Rights Reserved. Comfort Food Made Better.</p>
+      <a href="#headerHome" class="back-to-top">
+        Back to top
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- DYNAMIC STICKY BOTTOM APP INTERACTION BAR FOR MOBILE VIEWPORT -->
+  <nav class="sticky-bottom-nav" aria-label="Mobile Navigation Drawer bar">
+    <a href="#headerHome" class="bottom-nav-item active">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+      Home
+    </a>
+    <a href="#menuSection" class="bottom-nav-item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      Menu
+    </a>
+    <a href="#orderDirectSection" class="bottom-nav-item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      Order Direct
+    </a>
+    <a href="#reviewsSection" class="bottom-nav-item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      Reviews
+    </a>
+  </nav>
+
+  <!-- FLOATING WHATSAPP CHAT BUTTON (Sticky overall) -->
+  <a href="https://wa.me/919000000000" target="_blank" class="floating-order-btn" title="Direct Whatsapp Order" aria-label="Direct Whatsapp Order Link button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+  </a>
+
+  <!-- FLOATING CART ACTIVE STATE SUMMARY BADGE (DYNAMIC DISPLAY) -->
+  <div class="floating-cart-badge" id="floatingCartBadge">
+    <span class="cart-count-lbl">1</span>
+    <span>Ready: <span id="cartItemName">Dal Makhani</span></span>
+    <span style="color:var(--secondary); font-size:1.1rem; line-height:1">➔</span>
+  </div>
+
+  <!-- Custom Core Javascript Link -->
+  <script src="script.js" defer></script>
+</body>
+</html>

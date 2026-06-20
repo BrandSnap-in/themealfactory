@@ -1,0 +1,6 @@
+{
+  "name": "The Meal Factory",
+  "description": "Premium cloud kitchen and food brand serving delicious, fresh North Indian and Chinese cuisine. Comfort food made better, delivered safely to your doorstep.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
